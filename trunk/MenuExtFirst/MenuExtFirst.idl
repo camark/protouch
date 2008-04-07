@@ -1,0 +1,36 @@
+// MenuExtFirst.idl : IDL source for MenuExtFirst
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (MenuExtFirst.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(E1A3E657-D0C0-4C7C-B492-A44ABB329874),
+	dual,
+	nonextensible,
+	helpstring("IIGMenuEx Interface"),
+	pointer_default(unique)
+]
+interface IIGMenuEx : IDispatch{
+};
+[
+	uuid(136CC581-61F9-4232-BBA5-3B6734AC273E),
+	version(1.0),
+	helpstring("MenuExtFirst 1.0 Type Library")
+]
+library MenuExtFirstLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(2CE4C7E6-0984-4389-A44D-CEBBD740F814),
+		helpstring("IGMenuEx Class")
+	]
+	coclass IGMenuEx
+	{
+		[default] interface IIGMenuEx;
+	};
+};

@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MenuExtFirst", "MenuExtFirst\MenuExtFirst.vcproj", "{20ECBDA2-C758-4E45-A46E-EC87F3FD4C34}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MenuExtFirstPS", "MenuExtFirst\MenuExtFirstPS.vcproj", "{CA81BFA4-116F-47DB-8972-6DAC89D7763A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{20ECBDA2-C758-4E45-A46E-EC87F3FD4C34} = {20ECBDA2-C758-4E45-A46E-EC87F3FD4C34}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20ECBDA2-C758-4E45-A46E-EC87F3FD4C34}.Debug|Win32.ActiveCfg = Debug|Win32
+		{20ECBDA2-C758-4E45-A46E-EC87F3FD4C34}.Debug|Win32.Build.0 = Debug|Win32
+		{20ECBDA2-C758-4E45-A46E-EC87F3FD4C34}.Release|Win32.ActiveCfg = Release|Win32
+		{20ECBDA2-C758-4E45-A46E-EC87F3FD4C34}.Release|Win32.Build.0 = Release|Win32
+		{CA81BFA4-116F-47DB-8972-6DAC89D7763A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CA81BFA4-116F-47DB-8972-6DAC89D7763A}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
