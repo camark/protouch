@@ -1,0 +1,24 @@
+HKCR
+{
+	NoRemove CLSID
+    {
+        ForceRemove {2CE4C7E6-0984-4389-A44D-CEBBD740F814} = s 'IGMenuEx Class'
+        {
+            InprocServer32 = s '%MODULE%'
+            {
+                val ThreadingModel = s 'Apartment'
+            }
+        }
+    }
+    
+	NoRemove txtfile
+	{
+		NoRemove ShellEx
+		{
+			NoRemove ContextMenuHandlers
+			{
+					ForceRemove {2CE4C7E6-0984-4389-A44D-CEBBD740F814} = s 'IGMenuEx Class'
+			}
+		}
+	}				
+}
